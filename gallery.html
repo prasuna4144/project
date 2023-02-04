@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                background-image: url("images/bgimage.jpg");
+            }
+            html{
+                font-size: 62.5%;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                padding: 3rem;
+            }
+            h1{
+                font-size:3rem;
+                padding:2rem;
+                text-align: center;
+                text-shadow: 5px 5px 2px 1px;
+            }
+            .image{
+                display:block;
+                width:100%;
+                border-radius: 20%;
+            }
+            .overlay{
+                position:absolute;
+                top: 0;
+                bottom:0;
+                left:0;
+                right:0;
+                height:100%;
+                width:100%;
+                opacity:0;
+                transition:.5s ease;
+                background-color: rgb(142, 184, 220);
+            }
+            .caption{
+                font-size: 2rem;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+            }
+            .thumbnail:hover{
+                transform:translateY(-4px);
+            }
+            .img-container:hover .overlay{
+                opacity:1;
+
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GALLERY</h1>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="img-container">
+                    <img src="images/galimg.webp" alt="music" height="100%"class="image">
+                    <div class="overlay">
+
+                        <p class="caption">fig-1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+                <div class="img-container">
+                <img src="images/music.jpg" alt="Music" class="image">
+                <div class="overlay">
+
+                    <p class="caption">fig-2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <div class="img-container">
+            <img src="images/music2.jpg" alt="music" height="60%" class="image">
+            <div class="overlay">
+
+                <p class="caption">fig-3</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/music8.jpg" alt="music" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-4</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/bgm2.jpg" alt="music"height="220px" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-5</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/music4.jpg" alt="music" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-6</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/music5.jpg" alt="music" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-7</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/music1.jpg" alt="music" height="220px" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-8</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+        <div class="img-container">
+        <img src="images/music8.jpg" alt="music" class="image">
+        <div class="overlay">
+
+            <p class="caption">fig-9</p>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+    </div>
+</body>
+</html>

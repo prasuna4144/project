@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+            
+}
+.container{
+    height:200vh;
+    width:100%;
+    background-image: url("images/bgimage.jpg");
+    background-position: center;
+    background-size: 95%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    text-shadow: #232d60;
+}
+.navbar{
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+.music{
+    width: 300px;
+    height:150px;
+    cursor: pointer;
+    
+}
+nav{
+    width:80%;
+    background: #fff;
+    padding-left: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 300px;
+    color:#777;
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
+    transition :color 0.5s;
+    padding-left: 12px;
+}
+nav ul li::after{
+    content: '';
+    background:#0996b2;
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: -1;
+    opacity:0;
+}
+nav ul li:hover{
+   color: rgb(255, 255, 255);
+}
+nav ul li:hover::after{
+    top:50%;
+    opacity:1;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(220, 15, 107);
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20px;
+    color: #0d0e0f;
+}
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #2e0dc1, #77ffc4);
+    border-radius: 6px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22 rgba(0,0,0,0.4);
+
+}
+.icons{
+  margin-top: 40px;  
+  display: flex;
+}
+.icons img{
+   width:40px;
+   margin-right: 25px;
+}
+.song{
+    height: 200px;
+    position:absolute;
+    margin-bottom: auto;
+    right: 80px;
+}
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>MUSIC</h2>
+            <img src="images/logo.webp" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="album.html">Albums</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/song.jpg" class="music" width="100px">
+        </div>
+        <div class="content">
+            <a href="#" class="btn"><img src="images/playimg.webp" height="200px" width="200px"><br><img src="images/playnow.png" width="20px">Play Now</a>
+            <h1>ENJOY THE MUSIC</h1><br><br>
+            <p><b>Music is the art form that combines rhythm and sound to form a functional melodic line. Music itself transcends time, space, and cultures. Music can carry a mood without speaking any specific words. 
+                It can also be captured and recorded in a written universal language unique unto any other art form.</b></p>
+                 <div class="icons">
+                    <img src="images/arrow1.png">
+                    <img src="images/arrow2.png">
+                 </div>
+        </div>
+        <img src="images/music.jpg" class="song">
+       </div>
+       <marquee><img src="images/music4.jpg" height="200px" width="200px"><img src="images/music1.jpg" height="200px" width="200px"><img src="images/music2.jpg" height="200px" width="200px"><img src="images/music3.jpg" height="200px" width="200px"><img src="images/music5.jpg" height="200px" width="200px"><img src="images/music6.jpg" height="200px" width="200ps"><img src="images/music7.webp" height="200px" width="200px"><img src="images/music8.jpg" height="200px" width="200px"><img src="images/music9.jpg" height="200px" width="200px"></marquee>
+</body>
+</html>
